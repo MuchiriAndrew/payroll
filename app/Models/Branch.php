@@ -11,6 +11,8 @@ class Branch extends Model
 
     protected $fillable = ['branchName'];
 
+    protected $table = 'branches';
+
     //relationship to employee
     public function employee() {
         return $this->hasMany(Employee::class, 'id');

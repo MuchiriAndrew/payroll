@@ -10,6 +10,7 @@ class Employee extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'phoneNo', 'email', 'branchID', 'departmentID', 'salary', 'isDisabled?', 'document'];
+    protected $table = 'employees';
 
     //relationship to branch
     public function branch() {
